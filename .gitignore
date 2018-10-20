@@ -6,3 +6,5 @@ lib/
 token.mat
 ex*
 submit.m
+mapFeature.m
+plotDecisionBoundary.m
