@@ -8,6 +8,10 @@ ex*
 submit.m
 mapFeature.m
 plotDecisionBoundary.m
-Assignment 3/displayData.m
-Assignment 3/fmincg.m
-Assignment 3/sigmoid.m
+displayData.m
+fmincg.m
+sigmoid.m
+Assignment 4/checkNNGradients.m
+Assignment 4/computeNumericalGradient.m
+Assignment 4/debugInitializeWeights.m
+Assignment 4/predict.m
