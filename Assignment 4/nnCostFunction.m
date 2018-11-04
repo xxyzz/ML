@@ -77,10 +77,33 @@ a3 = sigmoid(z3);
 yVector = zeros(m, num_labels);
 
 for i = 1:m
-    yVector(i, y(i)) = 1;
+    yVector(i) = ([1:num_labels] == y(i));
 end
 
 J = sum(sum(-yVector .* log(a3) - (1 - yVector) .* log(1 - a3))) / m + (sum(sum(Theta1(:, 2 : end) .^ 2)) + sum(sum(Theta2(:, 2 : end) .^ 2))) * lambda / (2 * m);
+
+% Backpropagation
+for t = 1:m
+    a1 = [1; X(t, :)'];
+
+    z2 = Theta1 * a1;
+    a2 = [1; sigmoid(z2)];
+
+    z3 = Theta2 * a2;
+    a3 = sigmoid(z3);
+
+    delta3 = a3 - yVector(t, :)';
+
+    delta2 = (Theta2' * delta3) .* [1; sigmoidGradient(z2)];
+    delta2 = delta2(2:end);
+
+    Theta1_grad = Theta1_grad + delta2 * a1';
+    Theta2_grad = Theta2_grad + delta3 * a2';
+
+end
+
+Theta1_grad = Theta1_grad / m + [zeros(size(Theta1, 1), 1) Theta1(:, 2:end)] * lambda / m;
+Theta2_grad = Theta2_grad / m + [zeros(size(Theta2, 1), 1) Theta2(:, 2:end)] * lambda / m;
 
 % -------------------------------------------------------------
 
