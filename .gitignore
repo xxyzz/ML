@@ -15,3 +15,6 @@ Assignment 4/checkNNGradients.m
 Assignment 4/computeNumericalGradient.m
 Assignment 4/debugInitializeWeights.m
 Assignment 4/predict.m
+Assignment 5/featureNormalize.m
+Assignment 5/plotFit.m
+Assignment 5/trainLinearReg.m
