@@ -3,7 +3,7 @@
 *.pdf
 *.txt
 lib/
-token.mat
+*.mat
 ex*
 submit.m
 mapFeature.m
@@ -18,3 +18,12 @@ Assignment 4/predict.m
 Assignment 5/featureNormalize.m
 Assignment 5/plotFit.m
 Assignment 5/trainLinearReg.m
+Assignment 6/svmTrain.m
+Assignment 6/svmPredict.m
+Assignment 6/plotData.m
+Assignment 6/visualizeBoundaryLinear.m
+Assignment 6/visualizeBoundary.m
+Assignment 6/linearKernel.m
+Assignment 6/getVocabList.m
+Assignment 6/porterStemmer.m
+Assignment 6/readFile.m
