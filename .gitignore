@@ -2,6 +2,7 @@
 *.zip
 *.pdf
 *.txt
+*.png
 lib/
 *.mat
 ex*
@@ -27,3 +28,8 @@ Assignment 6/linearKernel.m
 Assignment 6/getVocabList.m
 Assignment 6/porterStemmer.m
 Assignment 6/readFile.m
+Assignment 7/drawLine.m
+Assignment 7/plotDataPoints.m
+Assignment 7/plotProgresskMeans.m
+Assignment 7/runkMeans.m
+Assignment 7/featureNormalize.m
